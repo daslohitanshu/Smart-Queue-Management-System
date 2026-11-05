@@ -1,0 +1,125 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #e0e0e0;
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #1e1e1e;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  text-align: left;
+}
+
+input, select, textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2c2c2c;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #646cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #535bf2;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.token-card {
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #252525;
+  margin: 1rem 0;
+}
+
+.token-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #646cff;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
+
+.queue-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.queue-table th {
+  background: #2c2c2c;
+  color: #999;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.queue-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #2c2c2c;
+  text-align: left;
+}
+
+.queue-table tr:hover {
+  background: #252525;
+}
+
+nav a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
